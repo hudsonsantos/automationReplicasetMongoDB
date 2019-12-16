@@ -78,8 +78,7 @@ O robô fará os seguintes passos:
 dbpath para cada um dos diretórios criados no diretório raiz /mongodb; <br>
 Altera a porta padrão com base na porta reconfigurada, adicionando + 1.<br>
 Exemplo: Master: 47017. Nó 2: 47018. Nó 3: 47019; <br>
-Altera o IP do host adicionado ao mongo.conf de cada uma das cópias adicionando + 1. <br>
-Exemplo: Master 10.11.11.1. Nó2: 10.11.11.2. Nó 3: 10.11.11.3;<br>
+
 * Para o serviço do mongodb;
 * Inicia o serviço de replicação; 1 para cada nó na máquina, ao total de 3 serviços;
 * Configuração da replicação:
@@ -92,14 +91,14 @@ String de conexão para nó master:
 > mongo --host *IPHost* --port 47017 -u *Usuário* -p *Senha*
 <br>
 
-A string de conexão para os nós slaves, basta subistituir somar + 1 final do IP e da Porta do Master.
+A string de conexão para os nós slaves, basta subistituir somar + 1 final da Porta do Master.
 <br>
 Exemplo:
 <br>
 
 Master: --host 10.10.11.1  --port 47017;<br>
-Slave-01: --host 10.10.11.2 --port 47018;<br>
-Slave-01: --host 10.10.11.3 --port 47019;<br>
+Slave-01: --host 10.10.11.1 --port 47018;<br>
+Slave-01: --host 10.10.11.1 --port 47019;<br>
 
 ---
 Agora basta entrar em um dos nós slaves, colocar como leitura **rs.slaveOk()** e verificar se os dados foram replicados:
