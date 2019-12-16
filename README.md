@@ -1,4 +1,4 @@
-# automationReplicasetMongoDB
+# Automatização ambiente de replicação MongoDB
 This is script replicaset  automation to mongodb, writing in python.
 
 O objetivo deste projeto é a automatização da instalação e configuração de uma replicação (simples) de um ambiente de mongoDB. Assim, o usuário pode ter em poucos minutos uma replicação de três serviços (nós de mongoDB) para testes e desenvolvimento em uma maquina *stand alone*.
