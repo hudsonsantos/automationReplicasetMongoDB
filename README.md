@@ -30,7 +30,6 @@ OBS. Para mongoDB, o robô utilizará distribuição da Percona mongoDB
 
 Baixe o projeto para um diretório dentro do sistema operacional ao qual irá hospedar o conjunto de replicas.
 
-Entre no diretório principal do projeto, teremos um arquivo e uma pasta:
 * src
 * index.py
 <br>
@@ -38,7 +37,11 @@ Entre no diretório principal do projeto, teremos um arquivo e uma pasta:
 ## Execução:
 <br>
 
-> **>python from DeployMongoDB.index import C_index as c**
+Entre no diretório ao qual encontrará a pasta chamado DeployMongoDB. OBS. execute o python neste diretório e não dentro da pasta DeployMongoDB.
+
+> **python
+
+> **>from DeployMongoDB.index import C_index as c**
 
 > **c.cor_index()** 
 <br>
