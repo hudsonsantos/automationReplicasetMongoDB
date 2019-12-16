@@ -39,9 +39,8 @@ Baixe o projeto para um diretório dentro do sistema operacional ao qual irá ho
 
 Entre no diretório ao qual encontrará a pasta chamado DeployMongoDB. OBS. execute o python neste diretório e não dentro da pasta DeployMongoDB.
 
-> **python
 
-> **>from DeployMongoDB.index import C_index as c**
+> **>python from DeployMongoDB.index import C_index as c**
 
 > **c.cor_index()** 
 <br>
